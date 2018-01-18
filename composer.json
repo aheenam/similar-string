@@ -1,0 +1,31 @@
+{
+    "name": "aheenam/similar-string",
+    "description": "Find level of similarity between strings based on Dice's Coefficient",
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rathes Sachchithananthan",
+            "email": "rathes@aheenam.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aheenam\\SimilarString\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aheenam\\SimilarString\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "stable"
+}
