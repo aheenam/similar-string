@@ -1,10 +1,11 @@
 <?php
+
 namespace Aheenam\SimilarString;
 
 class Dice
 {
     /**
-     * Returns the Dice coefficient of two given strings
+     * Returns the Dice coefficient of two given strings.
      *
      * @return float
      */
@@ -18,9 +19,10 @@ class Dice
     }
 
     /**
-     * Returns a collection of bigrams of the given word
+     * Returns a collection of bigrams of the given word.
      *
      * @param string $word
+     *
      * @return Collection
      */
     public function bigrams($word)
@@ -28,8 +30,8 @@ class Dice
         $bigrams = collect([]);
         $wordLength = strlen($word);
 
-        for ($i=0; $i+1 < $wordLength; $i++) {
-            $bigrams->push($word[$i] . $word[$i + 1]);
+        for ($i = 0; $i + 1 < $wordLength; $i++) {
+            $bigrams->push($word[$i].$word[$i + 1]);
         }
 
         return $bigrams;
