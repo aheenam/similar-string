@@ -1,5 +1,3 @@
-**package is not production ready**
-
 Similar String
 ===
 
